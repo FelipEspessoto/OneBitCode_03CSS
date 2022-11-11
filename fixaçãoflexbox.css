@@ -1,0 +1,51 @@
+/* Estrutura fundamental para ter liberdade na hora de alterar o estilo da página */
+*{
+    margin:0px;
+    padding:0px;
+/* Obrigatório para poder alterar o flex */
+    box-sizing: border-box;
+}
+/* Edição classe header */
+.header{
+/* Dipslay mostra a que vamos editar para flex */
+    display: flex;
+    background-color: #000;
+/* O Space between separa todos os itens e joga cada um pra uma ponta */
+    justify-content:space-between ;
+/* Aumenta espaçamento entre os itens e as margens */
+    padding:25px 25px;
+/* Alinha os botões verticalmente */
+    align-items: center;
+}
+.logo-rock{
+    width:40px;
+}
+.logo-onebitcode{
+    width:200px;
+}
+.buttons{
+    display: flex;
+/* Espaçamento entre os botões */
+    gap: 10px;
+}
+.buttonHeader{
+    font-size: 18px;
+/* Espaço entre o texto dos botões e suas bordas */
+    padding: 10px 15px;
+/* Configuração da borda dos botões */
+    border: 1px solid #fff;
+/* Curva na ponta dos botões */
+    border-radius:8px;
+/* Cor do texto dos botões */
+    color:#fff;
+/* Botões sem fundo */
+    background-color: transparent;
+/* Altera o cursor quando o mouse passa em cima do botão, mostrando ao usuário que é possível clicar nos itens */
+    cursor: pointer;
+/* Transição entre o hover */
+    transition: 0.4s;
+}
+/* Animação quando o mouse passar em cima dos botões */
+.buttonHeader:hover{
+    border-color:#f00;
+}
